@@ -10,10 +10,18 @@ public class Metodus0223 {
         osszeg = osszead(szam1, szam2);
         kiir("%d + %d = %d".formatted(szam1, szam2, osszeg));
         
-        int ujszam1 = 1;
-        int ujszam2 = 2;
-        int ujszam3 = 3;
-        int ujszam4 = 4;
+        osszeg = osszead(1,2);
+        osszeg = osszead(osszeg, 3);
+        osszeg = osszead(osszeg,4);
+        kiir("1 + 2 + 3 + 4 = "+osszeg);
+        
+        //3 szám összegének a gyöke
+        double gyok;
+        osszeg = osszead(7,7);
+        osszeg = osszead(osszeg, 7);
+        gyok = Math.sqrt(osszeg);
+        
+        kiir("7 + 7 + 7 gyöke =  "+gyok);
         
         
         
