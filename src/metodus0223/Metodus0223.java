@@ -3,29 +3,46 @@ package metodus0223;
 public class Metodus0223 {
 
     public static void main(String[] args) {
-        int osszeg = elso10szamosszege();
-        int szam1 = 333;
-        int szam2 = 666;
+        metodusok();
         
-        osszeg = osszead(szam1, szam2);
-        kiir("%d + %d = %d".formatted(szam1, szam2, osszeg));
         
-        osszeg = osszead(1,2);
-        osszeg = osszead(osszeg, 3);
-        osszeg = osszead(osszeg,4);
-        kiir("1 + 2 + 3 + 4 = "+osszeg);
         
+        
+    }
+
+    private static void metodusok() {
+        ketszamosszeadas();
+        
+        negyszamosszege();
+        
+        haromszamosszegenekgyoke();
+    }
+
+    private static void haromszamosszegenekgyoke() {
         //3 szám összegének a gyöke
         double gyok;
+        int osszeg;
         osszeg = osszead(7,7);
         osszeg = osszead(osszeg, 7);
         gyok = Math.sqrt(osszeg);
         
         kiir("7 + 7 + 7 gyöke =  "+gyok);
-        
-        
-        
-        
+    }
+
+    private static void negyszamosszege() {
+        int osszeg;
+        osszeg = osszead(1,2);
+        osszeg = osszead(osszeg, 3);
+        osszeg = osszead(osszeg,4);
+        kiir("1 + 2 + 3 + 4 = "+osszeg);
+    }
+
+    private static void ketszamosszeadas() {
+        int osszeg = elso10szamosszege();
+        int szam1 = 333;
+        int szam2 = 666;
+        osszeg = osszead(szam1, szam2);
+        kiir("%d + %d = %d".formatted(szam1, szam2, osszeg));
     }
 
     private static int elso10szamosszege() {
