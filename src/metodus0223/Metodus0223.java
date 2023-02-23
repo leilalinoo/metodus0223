@@ -3,7 +3,8 @@ package metodus0223;
 public class Metodus0223 {
 
     public static void main(String[] args) {
-        
+        elso10szamosszege();
+        osszead(333, 333);
     }
 
     private static int elso10szamosszege() {
